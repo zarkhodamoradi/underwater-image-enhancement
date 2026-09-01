@@ -64,13 +64,13 @@ $$\mu_{\text{gray}} = \frac{\mu_R + \mu_G + \mu_B}{3}, \quad I'_c(x, y) = \text{
 
 This restores suppressed red tones and eliminates dominant cyan/green tinting.
 
-### 2. CLAHE on CIE $L^*a^*b^*$
+### 2. CLAHE on CIE L\*a\*b\*
 
 To prevent chromatic distortion while expanding dynamic range:
 
-- Converts the image from RGB to perceptual $L^*a^*b^*$ space.
-- Applies **CLAHE** (Contrast Limited Adaptive Histogram Equalization) exclusively on the **$L^*$ (Luminance)** channel with a clip limit to prevent over-amplifying noise in homogeneous regions.
-- Keeps chromatic channels ($a^*, b^*$) unchanged.
+- Converts the image from RGB to perceptual L<sup>\*</sup>a<sup>\*</sup>b<sup>\*</sup> space.
+- Applies **CLAHE** (Contrast Limited Adaptive Histogram Equalization) exclusively on the **L<sup>\*</sup> (Luminance)** channel with a clip limit to prevent over-amplifying noise in homogeneous regions.
+- Keeps chromatic channels (a<sup>\*</sup>, b<sup>\*</sup>) unchanged.
 
 ### 3. Gamma Correction (Power-Law Transform)
 
@@ -92,7 +92,7 @@ $$K = \begin{bmatrix} 0 & -1 & 0 \\ -1 & 5 & -1 \\ 0 & -1 & 0 \end{bmatrix}$$
 
 ---
 
-## ⚙️ Installation & Setup
+## Installation & Setup
 
 ### 1. Clone the repository
 
