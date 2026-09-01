@@ -88,9 +88,16 @@ Underwater particulates ("marine snow") and sensor noise are removed using OpenC
 
 Compensates for turbidity and forward scattering blur via 2D spatial convolution using a Laplacian high-pass sharpening kernel:
 
-$$K = \begin{bmatrix} 0 & -1 & 0 \\ -1 & 5 & -1 \\ 0 & -1 & 0 \end{bmatrix}$$
+$$
+K = \begin{bmatrix} 
+0 & -1 & 0 \\ 
+-1 & 5 & -1 \\ 
+0 & -1 & 0 
+\end{bmatrix}
+$$
 
 ---
+
 
 ## Installation & Setup
 
