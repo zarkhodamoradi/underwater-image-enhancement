@@ -133,4 +133,3 @@ pip install opencv-python numpy matplotlib jupyter
 
 Distributed under the **MIT License**. See `LICENSE` for more information.
 
-
